@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitFuel Pro – Gym & Nutrition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#home" aria-label="FitFuel Pro home"><svg width="38" height="38" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="11" fill="#ff6a1a"/><path d="M8 15v10M12 12v16M28 12v16M32 15v10M12 20h16" stroke="#111" stroke-width="3.2" stroke-linecap="round"/></svg>FitFuel <b>Pro</b></a>
+<nav id="nav"><a href="#home">Home</a><a href="#workouts">Workouts</a><a href="#nutrition">Nutrition Plans</a><a href="#trainers">Trainers</a><a href="#progress">Progress Tracker</a><a href="#contact">Contact</a><a class="navjoin btn b1" href="#" data-join>Join Now</a></nav>
+<label class="search"><span aria-hidden="true">🔍</span><input id="q" type="search" placeholder="Search exercises or meals" aria-label="Search exercises or meals"></label>
+<button class="btn b1" id="joinBtn" data-join type="button">Join Now</button>
+<button class="menu" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+</div></header>
+
+<main id="home">
+<div class="wrap hero">
+<div>
+<h1>Transform Your Body, <span>Fuel Your Performance</span></h1>
+<p>Structured workouts, coach-built meal plans and a tracker that shows every rep and every gain. Train with a plan, eat with purpose and watch the numbers move.</p>
+<div class="cta"><a class="btn b1" href="#workouts">Start Training</a><button class="btn b2" type="button" data-plan>Get Meal Plan</button></div>
+</div>
+<div class="stage" role="img" aria-label="Illustration of an athlete lifting a barbell">
+<svg viewBox="0 0 400 420"><defs><radialGradient id="g" cx="50%" cy="40%"><stop offset="0" stop-color="#ff6a1a" stop-opacity=".45"/><stop offset="1" stop-color="#ff6a1a" stop-opacity="0"/></radialGradient></defs>
+<circle cx="200" cy="190" r="190" fill="url(#g)"/>
+<rect y="350" width="400" height="70" fill="#0b0c0e"/>
+<g stroke="#f5f5f2" stroke-width="16" stroke-linecap="round" fill="none"><path d="M200 150v110M200 260l-38 90M200 260l38 90M200 170l-55-30M200 170l55-30"/></g>
+<circle cx="200" cy="112" r="26" fill="#f5f5f2"/>
+<path d="M60 128h280" stroke="#9aa0a6" stroke-width="8" stroke-linecap="round"/>
+<g fill="#ff6a1a"><rect x="38" y="84" width="20" height="88" rx="6"/><rect x="342" y="84" width="20" height="88" rx="6"/></g>
+<g fill="#9dff2e"><rect x="18" y="98" width="16" height="60" rx="5"/><rect x="366" y="98" width="16" height="60" rx="5"/></g></svg>
+<div class="tag glass" style="left:16px;bottom:18px">🔥 540 kcal burned</div>
+<div class="tag glass" style="right:16px;top:18px;color:var(--gr)">💪 PR: 120 kg squat</div>
+</div></div>
+
+<section id="workouts"><div class="wrap">
+<h2>Featured programs</h2><p class="sub">Pick the goal. We build the weekly plan around it.</p>
+<div class="three">
+<div class="glass prog" role="button" tabindex="0" data-prog="strength" aria-label="Build my Strength Training program"><div class="ring">🏋️</div><h3>Strength Training</h3><p>Heavy compound lifts with progressive overload to build raw, usable strength.</p><span class="btn b1" style="margin-top:14px">Build my program</span></div>
+<div class="glass prog" role="button" tabindex="0" data-prog="loss" aria-label="Build my Weight Loss Program program"><div class="ring">🔥</div><h3>Weight Loss Program</h3><p>Interval cardio, full-body circuits and a sustainable calorie plan.</p><span class="btn b1" style="margin-top:14px">Build my program</span></div>
+<div class="glass prog" role="button" tabindex="0" data-prog="muscle" aria-label="Build my Muscle Building program"><div class="ring">💪</div><h3>Muscle Building</h3><p>High-volume hypertrophy splits paired with a protein-first nutrition guide.</p><span class="btn b1" style="margin-top:14px">Build my program</span></div>
+</div></div></section>
+
+<section id="library"><div class="wrap">
+<h2>Exercise library</h2><p class="sub">Every movement comes with form cues, sets and reps.</p>
+<div class="five" id="lib">
+<article class="glass ex"><div class="pic" style="background:linear-gradient(145deg,#ff6a1a55,#14161a)">🏋️‍♂️</div><div class="in"><h3>Chest Workouts</h3><span class="lvl l2">Intermediate</span><button class="btn b1" type="button" data-ex="chest">View Exercises</button></div></article>
+<article class="glass ex"><div class="pic" style="background:linear-gradient(145deg,#9dff2e44,#14161a)">🧗</div><div class="in"><h3>Back Workouts</h3><span class="lvl l2">Intermediate</span><button class="btn b1" type="button" data-ex="back">View Exercises</button></div></article>
+<article class="glass ex"><div class="pic" style="background:linear-gradient(145deg,#ff6a1a55,#14161a)">🦵</div><div class="in"><h3>Leg Workouts</h3><span class="lvl l3">Advanced</span><button class="btn b1" type="button" data-ex="legs">View Exercises</button></div></article>
+<article class="glass ex"><div class="pic" style="background:linear-gradient(145deg,#9dff2e44,#14161a)">🤸</div><div class="in"><h3>Core Exercises</h3><span class="lvl l1">Beginner</span><button class="btn b1" type="button" data-ex="core">View Exercises</button></div></article>
+<article class="glass ex"><div class="pic" style="background:linear-gradient(145deg,#ff6a1a55,#14161a)">🏃</div><div class="in"><h3>Cardio Training</h3><span class="lvl l1">Beginner</span><button class="btn b1" type="button" data-ex="cardio">View Exercises</button></div></article>
+</div></div></section>
+
+<section id="nutrition"><div class="wrap">
+<h2>Eat for the work you do</h2><p class="sub">A balanced day of meals, portioned to your goal.</p>
+<div class="nut">
+<div class="glass plan"><h3 style="font-size:1.9rem">Today’s Healthy Meal Plan</h3>
+<div class="macros"><div><b>2,400</b><small>Calories</small></div><div><b>180g</b><small>Protein</small></div><div><b>260g</b><small>Carbs</small></div><div><b>70g</b><small>Fats</small></div></div>
+<div class="meal"><span>Breakfast: oats, berries, whey</span><span>520 kcal</span></div>
+<div class="meal"><span>Lunch: grilled chicken, rice, greens</span><span>680 kcal</span></div>
+<div class="meal"><span>Snack: protein shake, banana</span><span>340 kcal</span></div>
+<div class="meal"><span>Dinner: salmon, vegetables, quinoa</span><span>720 kcal</span></div>
+<button class="btn b3" style="margin-top:20px" type="button" data-plan>Get Meal Plan</button></div>
+<div class="food" aria-label="Healthy foods">
+<div>🍗<small>Grilled chicken</small></div><div>🐟<small>Salmon</small></div><div>🥦<small>Vegetables</small></div>
+<div>🥣<small>Oats</small></div><div>🍓<small>Fruits</small></div><div>🥤<small>Protein shake</small></div></div></div>
+<div class="cats">
+<div class="cat"><div class="ring">🥩</div><h3>High Protein Meals</h3></div>
+<div class="cat"><div class="ring">🥗</div><h3>Weight Loss Recipes</h3></div>
+<div class="cat"><div class="ring">🍚</div><h3>Muscle Gain Nutrition</h3></div>
+</div></div></section>
+<span id="trainers"></span><span id="progress"></span>
+</main>
+
+<footer id="contact"><div class="wrap">
+<p class="quote">Train Hard. Eat Smart. Stay Consistent.</p>
+<div class="fcols">
+<div><a class="logo" href="#home" style="margin-bottom:10px">FitFuel <b>Pro</b></a><p>Strength, fat loss and nutrition coaching in one place.</p><div class="soc"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="X">X</a></div></div>
+<div><h3>Quick links</h3><a href="#workouts">Workouts</a><a href="#nutrition">Nutrition Plans</a><a href="#trainers">Trainers</a><a href="#progress">Progress Tracker</a></div>
+<div><h3>Contact</h3><p>hello@fitfuelpro.com<br>+63 900 000 0000<br>Open daily, 5 am to 11 pm</p></div>
+<div><h3>Newsletter</h3><p>Weekly workouts and recipes, no spam.</p>
+<div class="news"><input id="em" type="email" placeholder="Email address" aria-label="Email address"><button class="btn b1" id="subBtn" style="padding:10px 18px">Subscribe</button></div><p id="msg" role="status"></p></div>
+</div>
+<p class="copy">© 2026 FitFuel Pro. All rights reserved.</p>
+</div></footer>
+
+
+<dialog id="auth" aria-labelledby="authTitle">
+<div class="auth glass">
+<button class="x" id="authClose" type="button" aria-label="Close">✕</button>
+<h2 id="authTitle">Join FitFuel Pro</h2>
+<div class="tabs" role="tablist">
+<button role="tab" id="tabLogin" aria-selected="true" aria-controls="formLogin" type="button">Log in</button>
+<button role="tab" id="tabReg" aria-selected="false" aria-controls="formReg" type="button">Register</button>
+</div>
+<form id="formLogin" novalidate>
+<label>Email<input name="email" type="email" autocomplete="email" required></label>
+<label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+<p class="err" role="alert"></p>
+<button class="btn b1" type="submit">Log in</button>
+<p class="alt">New here? <a href="#" data-tab="reg">Create an account</a></p>
+</form>
+<form id="formReg" novalidate hidden>
+<label>Full name<input name="name" type="text" autocomplete="name" required></label>
+<label>Email<input name="email" type="email" autocomplete="email" required></label>
+<label>Password (8+ characters)<input name="password" type="password" autocomplete="new-password" required></label>
+<label>Confirm password<input name="confirm" type="password" autocomplete="new-password" required></label>
+<label class="chk"><input name="terms" type="checkbox"> I agree to the Terms and Privacy Policy</label>
+<p class="err" role="alert"></p>
+<button class="btn b1" type="submit">Create account</button>
+<p class="alt">Already a member? <a href="#" data-tab="login">Log in</a></p>
+</form>
+</div>
+</dialog>
+
+<dialog id="planDlg" aria-labelledby="planTitle">
+<div class="auth wide glass">
+<button class="x" id="planClose" type="button" aria-label="Close">✕</button>
+<h2 id="planTitle">Your meal plan</h2>
+<form id="planForm" novalidate>
+<p class="sub" style="margin:0 0 4px">Enter your details. We calculate your BMI and build a plan around it.</p>
+<div class="row2">
+<label>Sex<select name="sex"><option value="m">Male</option><option value="f">Female</option></select></label>
+<label>Age (18+)<input name="age" type="number" min="18" max="80" inputmode="numeric" required></label>
+</div>
+<div class="row2">
+<label>Height (cm)<input name="height" type="number" min="120" max="230" inputmode="decimal" required></label>
+<label>Weight (kg)<input name="weight" type="number" min="30" max="250" inputmode="decimal" required></label>
+</div>
+<label>Activity level<select name="activity"><option value="1.2">Mostly sitting, little exercise</option><option value="1.375">Light: 1 to 3 workouts a week</option><option value="1.55" selected>Moderate: 3 to 5 workouts a week</option><option value="1.725">Heavy: 6 to 7 workouts a week</option></select></label>
+<p class="err" role="alert"></p>
+<button class="btn b1" type="submit">Generate my meal plan</button>
+</form>
+<div id="planOut" hidden></div>
+</div>
+</dialog>
+
+<dialog id="exDlg" aria-labelledby="exTitle">
+<div class="auth wide glass">
+<button class="x" id="exClose" type="button" aria-label="Close">✕</button>
+<h2 id="exTitle"></h2>
+<p class="sub" id="exIntro" style="margin:0 0 12px"></p>
+<div class="chips" id="exChips" role="group" aria-label="Filter by difficulty"></div>
+<ul class="exlist" id="exList"></ul>
+</div>
+</dialog>
+
+<dialog id="progDlg" aria-labelledby="progTitle">
+<div class="auth wide glass">
+<button class="x" id="progClose" type="button" aria-label="Close">✕</button>
+<h2 id="progTitle">Your program</h2>
+<form id="progForm" novalidate>
+<p class="sub" id="progIntro" style="margin:0 0 4px"></p>
+<div class="row2">
+<label>Age (18+)<input name="age" type="number" min="18" max="80" inputmode="numeric" required></label>
+<label>Training days per week<select name="days"><option value="3">3 days</option><option value="4" selected>4 days</option><option value="5">5 days</option></select></label>
+</div>
+<div class="row2">
+<label>Height (cm)<input name="height" type="number" min="120" max="230" inputmode="decimal" required></label>
+<label>Weight (kg)<input name="weight" type="number" min="30" max="250" inputmode="decimal" required></label>
+</div>
+<p class="err" role="alert"></p>
+<button class="btn b1" type="submit">Generate my program</button>
+</form>
+<div id="progOut" hidden></div>
+</div>
+</dialog>
+<script src="script.js" defer></script>
+</body>
+</html>
